@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="./js/libs/crafty.js"></script>
+  <script src="./js/libs/Box2dWeb-2.1.a.3.js"></script>
+  <script src="./js/libs/coffee-script.js"></script>
+  <script src="./js/libs/jquery-1.8.2.min.js"></script>
+  <title>Humans Must Die</title>
+</head>
+<body>
+
+
+
+
+<script type="text/coffeescript" src="src/CraftyBox.coffee"></script>
+<script type="text/coffeescript" src="src/game.coffee"></script>
+<script type="text/coffeescript" src="src/components/asteroid.coffee"></script>
+<script type="text/coffeescript" src="src/components/throwable.coffee"></script>
+<script type="text/coffeescript" src="src/components/separable.coffee"></script>
+<script type="text/coffeescript" src="src/components/movable.coffee"></script>
+<script type="text/coffeescript" src="src/components/hasSensor.coffee"></script>
+<script type="text/coffeescript" src="src/components/tower.coffee"></script>
+<script type="text/coffeescript" src="src/components/bullet.coffee"></script>
+
+<script type="text/coffeescript">
+  game = new InHumanGame
+    width     : 800
+    height    : 600
+    physics   :
+      gravityX: 0
+      gravityY: 0
+      scale   : 30
+      doSleep : true 
+    debug     : true
+</script>
+</body>
+</html>
